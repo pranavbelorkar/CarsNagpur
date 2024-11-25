@@ -85,7 +85,7 @@ export function CarsData() {
 
   const fetchCarDetails = async () => {
     try {
-      const response = await fetch(`http://15.206.179.98:3000/api/cars/cars/${params?.id}`, {
+      const response = await fetch(`http://65.2.161.15:3000/api/cars/cars/${params?.id}`, {
         method: 'GET',
         headers: {
           'content-type': 'application/json'

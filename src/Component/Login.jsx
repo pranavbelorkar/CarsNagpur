@@ -35,7 +35,7 @@ export function EnhancedLogin() {
     setError('');
 
     try {
-      const response = await fetch('http://15.206.179.98:3000/auth/register', {
+      const response = await fetch('http://65.2.161.15:3000/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, name, password }),
@@ -69,7 +69,7 @@ export function EnhancedLogin() {
     setError('');
 
     try {
-      const response = await fetch('http://15.206.179.98:3000/auth/verify-email', {
+      const response = await fetch('http://65.2.161.15:3000/auth/verify-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, code: otp }),
